@@ -1,0 +1,52 @@
+     <main>
+        
+        <Image 
+            src="/images/chicken.jpg"
+            width={200}
+            height={200}
+            alt="Chicken"
+        />
+        <Heading level="1">
+          <Link href="/posts/first-post"> 
+            <a>First post</a>
+          </Link>
+        </Heading>
+
+        <p className="description">
+          Get started by editing <code>pages/index.js</code>
+        </p>
+        {
+          //button(Register Now)
+        }
+        <Heading
+          level="1">
+          contact page title
+        </Heading>
+        <Heading
+          level="2">
+          song name goes here
+        </Heading>
+        <Heading
+          level="3">
+          song name goes here
+        </Heading>
+
+        <Paragraph intro>
+          Corgis corgis cogis intro paragraph
+        </Paragraph>
+
+        <Button 
+          label="Register now" 
+          path="/post/first-post"
+          type="primary"
+        />
+        <Button 
+          label="Learn More"
+          type="secondary" 
+        />
+        <Button 
+          label="Download now" 
+          path="/post/first-post"
+          type="primary"
+          />
+    </main>
