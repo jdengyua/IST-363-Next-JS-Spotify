@@ -8,7 +8,7 @@ import { getAllAlbumSlugs, getSingleAlbumData } from "../../lib/api"
 
 //waterfall
 // 1. getStaticPaths
-export async function getStaticPaths () {
+export async function getStaticPaths() {
     const paths = await getAllAlbumSlugs();
     return {
         paths,
@@ -17,7 +17,7 @@ export async function getStaticPaths () {
 }
 
 //2. getStaticProps
-export async function getStaticProps({ params}) {
+export async function getStaticProps({ params }) {
     const albumData = await getSingleAlbumData(params.id);
     return {
         props: {

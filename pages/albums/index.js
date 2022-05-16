@@ -7,7 +7,7 @@ import Link from 'next/link'
 import Paragraph from '../../components/Paragraph'
 import Row from '../../components/Row'
 
-import {getAlbums } from '../../lib/api'
+import { getAlbums } from '../../lib/api'
 
 export async function getStaticProps() {
     const albums = await getAlbums();
@@ -25,16 +25,16 @@ const AlbumsPage = ({albums}) => {
         <Heading level="1">Albums</Heading>
         <Row>
             {albums.map((album, index) => {
-                const {featuredImage, title, slug} = album;
-                const {src, alt,width,height} = featuredImage
+                const {featuredImage, title, slug} = album.node;
+                const {sourceUrl, altText,mediaDetails} = featuredImage.node;
                 return <Col key={index} xs="6" sm="4">
-                        <Image
-                            src={`/images/${src}`}
-                            alt={alt}
-                            width={width}
-                            height={height}
+                        <Image 
+                        src={sourceUrl}
+                        alt={altText}
+                        width={mediaDetails.width}
+                        height={mediaDetails.height}
                         />
-                    <Heading level="3">{album.title}</Heading>
+                    <Heading level="3">{title}</Heading>
                     <Paragraph>
                     <Link href={`/albums/${slug}`}>
                         <a>
