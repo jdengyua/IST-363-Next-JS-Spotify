@@ -65,7 +65,7 @@ const SingleAlbumPage = ({albumData}) => {
         {songsToAlbums &&
         <Section>
             <Heading level="2">Songs</Heading>
-            <Tracks item ={songsToAlbums} />
+            <Tracks items ={songsToAlbums} />
             
             {/*<Row>
             {songsToAlbums.map((song, index) => {
