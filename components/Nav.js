@@ -28,7 +28,7 @@ const navLinks = [
     }
 ]
 
-const Nav = ( mobile, flexDirection) => {
+const Nav = ( {mobile, flexDirection }) => {
     let navClasses = cx({
         nav : true,
         mobile : mobile,

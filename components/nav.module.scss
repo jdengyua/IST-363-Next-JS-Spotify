@@ -4,7 +4,7 @@
 .nav {
     //background-color: orange;
     display: none;
-    @include mixins.breakpoint(sm) {
+    @include mixins.breakpoint(md) {
         display: block;
     }
     &.mobile {

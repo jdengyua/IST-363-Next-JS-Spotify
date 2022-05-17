@@ -20,7 +20,7 @@ const Showcase = () => {
                 />
                 </Col>
 
-                <Col xs="8" md="9" flexDirection="column" justifyContent="center">
+                <Col xs="8" md="9" flexDirection="column" justifyContent="center" alignItems="flex-start">
                     <Heading level="1" marginBottom="1">Listening is everything</Heading>
                     <Paragraph marginBottom="1">
                         Millions of songs and podcasts. No credit card needed.
