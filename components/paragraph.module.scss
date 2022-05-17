@@ -1,8 +1,11 @@
+@use '../sass/abstracts/mixins.scss';
+
 .paragraph {
     font-family: arial;
     font-size: 1rem;
+    color: black;
+    @include mixins.marginBottom();
     &.intro {
         font-size: 2rem;
-        color: green
     }
 }
